@@ -9,19 +9,18 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 public class Http {
-    @JsonProperty("method")
-    private String method;
+  @JsonProperty("method")
+  private String method;
 
-    @JsonProperty("path")
-    private String path;
+  @JsonProperty("path")
+  private String path;
 
-    @JsonProperty("protocol")
-    private String protocol;
+  @JsonProperty("protocol")
+  private String protocol;
 
-    @JsonProperty("sourceIp")
-    private String sourceIp;
+  @JsonProperty("sourceIp")
+  private String sourceIp;
 
-    @JsonProperty("userAgent")
-    private String userAgent;
-
+  @JsonProperty("userAgent")
+  private String userAgent;
 }

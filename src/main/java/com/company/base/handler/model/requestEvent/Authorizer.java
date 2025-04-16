@@ -10,6 +10,5 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Authorizer {
-    private IAM iam;
-
+  private IAM iam;
 }

@@ -1,53 +1,51 @@
 package com.company.base.handler.model.requestEvent;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
-import java.util.Map;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
 public class LambdaUrlRequestEvent {
-    @JsonProperty("version")
-    private String version;
+  @JsonProperty("version")
+  private String version;
 
-    @JsonProperty("routeKey")
-    private String routeKey;
+  @JsonProperty("routeKey")
+  private String routeKey;
 
-    @JsonProperty("rawPath")
-    private String rawPath;
+  @JsonProperty("rawPath")
+  private String rawPath;
 
-    @JsonProperty("rawQueryString")
-    private String rawQueryString;
+  @JsonProperty("rawQueryString")
+  private String rawQueryString;
 
-    @JsonProperty("cookies")
-    private List<String> cookies;
+  @JsonProperty("cookies")
+  private List<String> cookies;
 
-    @JsonProperty("headers")
-    private Map<String, String> headers;
+  @JsonProperty("headers")
+  private Map<String, String> headers;
 
-    @JsonProperty("queryStringParameters")
-    private Map<String, String> queryStringParameters;
+  @JsonProperty("queryStringParameters")
+  private Map<String, String> queryStringParameters;
 
-    @JsonProperty("requestContext")
-    private RequestContext requestContext;
+  @JsonProperty("requestContext")
+  private RequestContext requestContext;
 
-    @JsonProperty("body")
-    private String body;
+  @JsonProperty("body")
+  private String body;
 
-    @JsonProperty("pathParameters")
-    private Map<String, String> pathParameters;
+  @JsonProperty("pathParameters")
+  private Map<String, String> pathParameters;
 
-    @JsonProperty("isBase64Encoded")
-    private boolean isBase64Encoded;
+  @JsonProperty("isBase64Encoded")
+  private boolean isBase64Encoded;
 
-    @JsonProperty("stageVariables")
-    private Map<String, String> stageVariables;
-
+  @JsonProperty("stageVariables")
+  private Map<String, String> stageVariables;
 }
